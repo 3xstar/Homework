@@ -1,0 +1,111 @@
+{
+    "Lucid Dreams": {
+        "genre": "hip-hop",
+        "author": "Juice WRLD",
+        "year_of_release": "2017"
+    },
+    "Bad Guy": {
+        "genre": "pop",
+        "author": "Billie Eilish",
+        "year_of_release": 2019
+    },
+    "Blinding Lights": {
+        "genre": "pop",
+        "author": "The Weeknd",
+        "year_of_release": 2019
+    },
+    "Astronaut In The Ocean": {
+        "genre": "hip-hop",
+        "author": "Masked Wolf",
+        "year_of_release": 2019
+    },
+    "Heat Waves": {
+        "genre": "pop",
+        "author": "Glass Animals",
+        "year_of_release": 2020
+    },
+    "Stay": {
+        "genre": "pop",
+        "author": [
+            "The Kid LAROI",
+            "Justin Bieber"
+        ],
+        "year_of_release": 2021
+    },
+    "Good 4 U": {
+        "genre": "rock",
+        "author": "Olivia Rodrigo",
+        "year_of_release": 2021
+    },
+    "Industry Baby": {
+        "genre": "hip-hop",
+        "author": [
+            "Lil Nas X",
+            "Jack Harlow"
+        ],
+        "year_of_release": 2021
+    },
+    "As It Was": {
+        "genre": "pop",
+        "author": "Harry Styles",
+        "year_of_release": 2022
+    },
+    "Unholy": {
+        "genre": "pop",
+        "author": [
+            "Sam Smith",
+            "Kim Petras"
+        ],
+        "year_of_release": 2022
+    },
+    "Flowers": {
+        "genre": "pop",
+        "author": "Miley Cyrus",
+        "year_of_release": 2023
+    },
+    "Vampire": {
+        "genre": "rock",
+        "author": "Olivia Rodrigo",
+        "year_of_release": 2023
+    },
+    "Cruel Summer": {
+        "genre": "pop",
+        "author": "Taylor Swift",
+        "year_of_release": 2019
+    },
+    "Kill Bill": {
+        "genre": "R&B",
+        "author": "SZA",
+        "year_of_release": 2022
+    },
+    "Paint The Town Red": {
+        "genre": "hip-hop",
+        "author": "Doja Cat",
+        "year_of_release": 2023
+    },
+    "greedy": {
+        "genre": "pop",
+        "author": "Tate McRae",
+        "year_of_release": 2023
+    },
+    "Lose Control": {
+        "genre": "hip-hop",
+        "author": "Teddy Swims",
+        "year_of_release": 2023
+    },
+    "Espresso": {
+        "genre": "pop",
+        "author": "Sabrina Carpenter",
+        "year_of_release": 2024
+    },
+    "Houdini": {
+        "genre": "pop",
+        "author": "Dua Lipa",
+        "year_of_release": 2023
+    },
+    "ZALUPKA": {
+        "genre": "pop",
+        "author": "D9ICK",
+        "year_of_release": "SSSSASS"
+    }
+}
