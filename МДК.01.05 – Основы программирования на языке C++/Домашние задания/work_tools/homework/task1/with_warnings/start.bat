@@ -1,0 +1,1 @@
+g++ main.cpp math_utils.cpp -Wall -Wextra -o app

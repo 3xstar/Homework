@@ -1,0 +1,33 @@
+PS C:\VSCODE\work_tools\homework\task5> clang++ -g logic_error.cpp -o app.exe
+PS C:\VSCODE\work_tools\homework\task5> gdb app.exe
+GNU gdb (GDB) 16.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+--Type <RET> for more, q to quit, c to continue without paging--c
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from app.exe...
+(gdb) break main
+Breakpoint 1 at 0x14000149f: file logic_error.cpp, line 18.
+(gdb) break find_max
+Breakpoint 2 at 0x14000142d: file logic_error.cpp, line 7.
+(gdb) run
+Starting program: C:\VSCODE\work_tools\homework\task5\app.exe 
+[New Thread 8616.0x6170]
+[New Thread 8616.0x139c]
+[New Thread 8616.0x5d1c]
+[New Thread 8616.0x5210]
+
+Thread 1 hit Breakpoint 1, main () at logic_error.cpp:18
+18          int test_arr[] = {2,1,3,5,4};
+(gdb)

@@ -1,0 +1,1 @@
+clang++ -fsanitize=undefined -g zero_division.cpp -o app.exe

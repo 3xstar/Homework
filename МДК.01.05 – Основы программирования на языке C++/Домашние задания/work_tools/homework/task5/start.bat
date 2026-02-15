@@ -1,0 +1,1 @@
+clang++ -g logic_error.cpp -o app.exe
