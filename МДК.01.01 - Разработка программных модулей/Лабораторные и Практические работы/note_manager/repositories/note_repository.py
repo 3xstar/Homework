@@ -5,7 +5,6 @@ class NoteRepository:
         conn = get_connection()
         try:
             cursor = conn.cursor()
-            # JOIN с таблицей users для получения имени
             cursor.execute("""
                 SELECT n.id, n.title, n.content, n.category_id, n.user_id, n.created_at, u.username
                 FROM notes n
@@ -16,23 +15,26 @@ class NoteRepository:
         finally:
             cursor.close()
             conn.close()
-    
+
     def get_note_by_id(self, note_id):
         conn = get_connection()
         try:
             cursor = conn.cursor()
             cursor.execute("SELECT * FROM notes WHERE id = %s", (note_id,))
-            rows = cursor.fetchone()
-            return rows
+            row = cursor.fetchone()
+            return row
         finally:
             cursor.close()
             conn.close()
-    
+
     def create_note(self, title, content, category_id, user_id):
         conn = get_connection()
         try:
             cursor = conn.cursor()
-            cursor.execute("INSERT INTO notes (title, content, category_id, user_id) VALUES(%s, %s, %s, %s)", (title, content, category_id, user_id))
+            cursor.execute(
+                "INSERT INTO notes (title, content, category_id, user_id) VALUES (%s, %s, %s, %s)",
+                (title, content, category_id, user_id)
+            )
             conn.commit()
             print(f"Записка: {title} добавлена")
         except Exception as e:
@@ -42,7 +44,7 @@ class NoteRepository:
             cursor.close()
             conn.close()
 
-    def update_note(self, note_id, title, content, category_id):  # Добавлен параметр
+    def update_note(self, note_id, title, content, category_id):
         conn = get_connection()
         try:
             cursor = conn.cursor()
@@ -51,6 +53,10 @@ class NoteRepository:
                 (title, content, category_id, note_id)
             )
             conn.commit()
+            print(f"Записка ID {note_id} успешно обновлена")
+        except Exception as e:
+            print(f"Ошибка при обновлении: {e}")
+            conn.rollback()
         finally:
             cursor.close()
             conn.close()
@@ -88,4 +94,3 @@ class NoteRepository:
         finally:
             cursor.close()
             conn.close()
-
